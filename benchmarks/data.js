@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1658707175858,
+  "lastUpdate": 1658707180371,
   "repoUrl": "https://github.com/musicinmybrain/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -63498,6 +63498,46 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000016192475474835208",
             "extra": "mean: 69.14944852931887 usec\nrounds: 5848"
+          }
+        ]
+      }
+    ],
+    "OpenTelemetry Python Benchmarks - Python 3.10 - exporter": [
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2ad9515affa1f8f16b076e79d82bd450a922a53e",
+          "message": "docs: Add an example for preferred temporality and aggregation for metric reader (#2832)\n\n* example\r\n\r\n* remove test\r\n\r\n* comments\r\n\r\n* docs\r\n\r\n* docs\r\n\r\n* seconds",
+          "timestamp": "2022-07-21T13:19:27+02:00",
+          "tree_id": "26566306d79d8f7a4e4fe446c86adcd0b7a99b3f",
+          "url": "https://github.com/musicinmybrain/opentelemetry-python/commit/2ad9515affa1f8f16b076e79d82bd450a922a53e"
+        },
+        "date": 1658707165336,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3826.205306557444,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000859858164026654",
+            "extra": "mean: 261.3555520102843 usec\nrounds: 1442"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7338.687879839878,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000787064707949974",
+            "extra": "mean: 136.26414099816148 usec\nrounds: 8454"
           }
         ]
       }

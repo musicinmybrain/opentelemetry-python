@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1658707180371,
+  "lastUpdate": 1658707195682,
   "repoUrl": "https://github.com/musicinmybrain/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -63538,6 +63538,46 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000787064707949974",
             "extra": "mean: 136.26414099816148 usec\nrounds: 8454"
+          }
+        ]
+      }
+    ],
+    "OpenTelemetry Python Benchmarks - Python 3.7 - sdk": [
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2ad9515affa1f8f16b076e79d82bd450a922a53e",
+          "message": "docs: Add an example for preferred temporality and aggregation for metric reader (#2832)\n\n* example\r\n\r\n* remove test\r\n\r\n* comments\r\n\r\n* docs\r\n\r\n* docs\r\n\r\n* seconds",
+          "timestamp": "2022-07-21T13:19:27+02:00",
+          "tree_id": "26566306d79d8f7a4e4fe446c86adcd0b7a99b3f",
+          "url": "https://github.com/musicinmybrain/opentelemetry-python/commit/2ad9515affa1f8f16b076e79d82bd450a922a53e"
+        },
+        "date": 1658707179893,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21396.725471647518,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000028948758198114335",
+            "extra": "mean: 46.736123306581895 usec\nrounds: 2214"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 16233.19544705999,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000003880388665887991",
+            "extra": "mean: 61.60216596056022 usec\nrounds: 6845"
           }
         ]
       }

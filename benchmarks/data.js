@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1658707545009,
+  "lastUpdate": 1658707549376,
   "repoUrl": "https://github.com/musicinmybrain/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -63698,6 +63698,46 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000013520415386389156",
             "extra": "mean: 5.360281230661407 usec\nrounds: 116280"
+          }
+        ]
+      }
+    ],
+    "OpenTelemetry Python Benchmarks - Python pypy-3.7 - propagator": [
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2ad9515affa1f8f16b076e79d82bd450a922a53e",
+          "message": "docs: Add an example for preferred temporality and aggregation for metric reader (#2832)\n\n* example\r\n\r\n* remove test\r\n\r\n* comments\r\n\r\n* docs\r\n\r\n* docs\r\n\r\n* seconds",
+          "timestamp": "2022-07-21T13:19:27+02:00",
+          "tree_id": "26566306d79d8f7a4e4fe446c86adcd0b7a99b3f",
+          "url": "https://github.com/musicinmybrain/opentelemetry-python/commit/2ad9515affa1f8f16b076e79d82bd450a922a53e"
+        },
+        "date": 1658707534561,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 619910.691504204,
+            "unit": "iter/sec",
+            "range": "stddev: 2.726473283284663e-7",
+            "extra": "mean: 1.613135591472901 usec\nrounds: 68966"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 1210889.9327464707,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015789415628522043",
+            "extra": "mean: 825.8388916747874 nsec\nrounds: 129871"
           }
         ]
       }
